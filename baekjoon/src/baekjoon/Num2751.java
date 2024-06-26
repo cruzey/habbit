@@ -13,7 +13,6 @@ public class Num2751 {
 
         ArrayList<Integer> listN = new ArrayList<>();
 
-
         for (int i = 0; i < n; i++) {
             listN.add(Integer.parseInt(br.readLine()));
         }
