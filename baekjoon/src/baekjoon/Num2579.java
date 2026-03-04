@@ -19,7 +19,10 @@ public class Num2579 {
         int[] dp = new int[n + 1];
 
         dp[1] = stair[1];
-        dp[2] = stair[1] + stair[2];
+        if (n >= 2) {
+            dp[2] = stair[1] + stair[2]; 
+        }
+
         for (int i = 3; i < n + 1; i++) {
             dp[i]= Math.max(dp[i - 2] + stair[i], dp[i - 3] + stair[i - 1] + stair[i]);
         }
