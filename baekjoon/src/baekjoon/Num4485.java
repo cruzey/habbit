@@ -53,7 +53,6 @@ public class Num4485 {
             BlackRupee bRupee = pq.poll();
             int y = bRupee.y;
             int x = bRupee.x;
-            int k = bRupee.k;
 
             if(dist[y][x] < bRupee.k) continue;
 
